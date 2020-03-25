@@ -1,0 +1,75 @@
+[33mcommit ec2f98112b909e99b7f7f716fdac298c03eda77e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: TSiyamachiraQA <QASiyamachira@gmail.com>
+Date:   Wed Mar 25 09:45:41 2020 +0000
+
+    fourth commit
+
+[1mdiff --git a/Conditionals/src/Runner.java b/Conditionals/src/Runner.java[m
+[1mdeleted file mode 100644[m
+[1mindex 3d45509..0000000[m
+[1m--- a/Conditionals/src/Runner.java[m
+[1m+++ /dev/null[m
+[36m@@ -1,18 +0,0 @@[m
+[31m-[m
+[31m-public class Runner {[m
+[31m-[m
+[31m-	public static void main(String[] args) {[m
+[31m-		int firstnum = 1;[m
+[31m-		int secnum = 3;[m
+[31m-		boolean operator = true;[m
+[31m-		[m
+[31m-		if (operator == true) {[m
+[31m-			System.out.println(firstnum + secnum);[m
+[31m-		}[m
+[31m-		else if (operator == false) {[m
+[31m-			System.out.println(firstnum + secnum);[m
+[31m-		}[m
+[31m-[m
+[31m-	}[m
+[31m-[m
+[31m-}[m
+[1mdiff --git a/Conditionals/src/com/qa/main/Conditions.java b/Conditionals/src/com/qa/main/Conditions.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..33814ff[m
+[1m--- /dev/null[m
+[1m+++ b/Conditionals/src/com/qa/main/Conditions.java[m
+[36m@@ -0,0 +1,21 @@[m
+[32m+[m[32mpackage com.qa.main;[m
+[32m+[m
+[32m+[m[32mpublic class Conditions {[m
+[32m+[m
+[32m+[m	[32mpublic int multiplyOrAdd (int firstnum , int secondnum , boolean thirdnum){[m
+[32m+[m[41m		[m
+[32m+[m		[32mif (firstnum % 2 == 0 || secondnum % 2 == 0) {[m
+[32m+[m			[32mSystem.out.println("Thats an even number!");[m
+[32m+[m			[32mreturn 0;[m
+[32m+[m		[32m}[m[41m [m
+[32m+[m			[32mif (thirdnum == true) {[m
+[32m+[m				[32mreturn firstnum + secondnum;[m
+[32m+[m			[32m}[m
+[32m+[m			[32melse {[m
+[32m+[m				[32mreturn firstnum * secondnum;[m
+[32m+[m			[32m}[m
+[32m+[m		[32m}[m
+[32m+[m	[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m
+[1mdiff --git a/Conditionals/src/com/qa/main/Runner.java b/Conditionals/src/com/qa/main/Runner.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..836152b[m
+[1m--- /dev/null[m
+[1m+++ b/Conditionals/src/com/qa/main/Runner.java[m
+[36m@@ -0,0 +1,11 @@[m
+[32m+[m[32mpackage com.qa.main;[m
+[32m+[m
+[32m+[m[32mpublic class Runner {[m
+[32m+[m
+[32m+[m	[32mpublic static void main(String[] args) {[m
+[32m+[m		[32mConditions Condition = new Conditions();[m
+[32m+[m		[32mint test = Condition.multiplyOrAdd(3, 22, true);[m
+[32m+[m		[32mSystem.out.println(test);[m
+[32m+[m[41m		[m
+[32m+[m	[32m}[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
